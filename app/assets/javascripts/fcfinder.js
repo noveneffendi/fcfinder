@@ -15,21 +15,21 @@
 
         // Varsayılan Metinler
         var i18n = {
-            empty_dir               :   'Dizin Boş',
-            empty_file              :   'Dosya Boş',
-            loading                 :   'Yükleniyor...',
-            file_size	            :	'Dosya Boyutu',
-            file_name           	:	'Dosya Adı',
-            file_cdate	            :	'Dosya Oluşturulma Tarihi',
-            faild_process	        :	'İşlem Gerçekleşemedi',
-            access_not_head		    :	'Erişim İzni Yok',
-            access_not_content	    :	'Erişim İzniniz Yok Lütfen Giriş Yapmayı Deneyiniz Hala Bu Sorunla Karşılaşırsanız Lüftfen Yönetici İle Görüşünüz.',
-            bottom_file			    :	'{0} Dosya ( {1} )',
-            load_directory	        :  	'Dizinler Yükleniyor',
-            read_permission	        :	'Okuma İzni',
-            write_permission        :	'Yazma İzni',
-            read_write_permission	:	'Yazma ve Okuma İzni',
-            directory	            :	'Klasör',
+            empty_dir               :   'Directory is Empty',
+            empty_file              :   'File is Empty',
+            loading                 :   'Loadng...',
+            file_size	            :	'File Size',
+            file_name           	:	'File Data',
+            file_cdate	            :	'Creation Date',
+            faild_process	        :	'Process Failed',
+            access_not_head		    :	'No Access Permission',
+            access_not_content	    :	'No Permission to Access Logging still sty Please try your feedback if you encounter this problem with the manager.',
+            bottom_file			    :	'{0} File ( {1} )',
+            load_directory	        :  	'Load Directory',
+            read_permission	        :	'Read Permission',
+            write_permission        :	'Write Permission',
+            read_write_permission	:	'Read and Write Permission',
+            directory	            :	'Directory',
 
             error   :
             {
@@ -52,62 +52,62 @@
 
             dialog  :
             {
-                info_h	                :	'Bilgiler',
-                info_size	            :	'Boyutu:',
-                info_addres	            :	'Adresi:',
-                info_url	            :	'Link:',
-                info_cdate          	:	'Oluşturulma Tarihi:',
-                info_mdate	            :	'Son Değişiklik Tarihi:',
-                info_file_permission	:	'Dosya İzinleri:',
-                preview_h	            :	'Önizle',
-                preview_size	        :	'Boyutu:',
-                preview_addres	        :	'Adresi:',
-                preview_url	            :	'Link:',
-                preview_cdate	        :	'Oluşturulma Tarihi:',
-                preview_mdate	        :	'Son Değişiklik Tarihi:',
-                file_replace_h	        :	'Dosya Değiştir veya Atla',
-                file_replace_content	:	'Hedefte Zaten "{0}" Adında Bir Dosya Var Üzerine Yazılsınmı?',
-                cancel	                :	'İptal Et',
-                ok	                    :	'Evet',
-                close	                :	'Kapat',
-                delete	                :	'Sil',
-                delete_h	            :	'{0} Sil',
-                delete_content	        :	'{0} Kalıcı Olarak Silmek İstediğinize Eminmisiniz?',
-                settings_h	            :	'Ayarlar',
-                settings_icon_view	    :	'Simge Görünümü',
-                settings_list_view	    :	'Liste Görünümü',
-                settings_show_size	    :	'Dosya Boyutunu Göster',
-                settings_show_date	    :	'Dosya Oluşturulma Tarihini Göster',
-                sorter_h	            :	'Sıralama Düzenle',
-                sorter_name	            :	'Ada Göre Sırala',
-                sorter_size	            :	'Boyutuna Göre Sırala',
-                sorter_date	            :	'Tarihe Göre Sırala',
-                sorter_kind	            :	'Dosya Türüne Göre Sırala'
+                info_h              : 'Information'
+                info_size           : 'Size:',
+                info_addres         : 'Address:'
+                info_url            : 'Link:',
+                info_cdate          : 'Creation Date:'
+                info_mdate          : 'Last Modified Date:'
+                info_file_permission: 'File Permissions:',
+                preview_h           : 'Preview:'
+                preview_size        : 'Size:',
+                preview_addres      : 'Address:'
+                preview_url         : 'Link:',
+                preview_cdate       : 'Creation Date:'
+                preview_mdate       : 'Last Modified Date:'
+                file_replace_h      : 'File Change or Skip'
+                file_replace_content: 'Already the target "{0}" is the name of a file There Yazılsınm on?'
+                Cancel              : 'Cancel'
+                ok                  : 'Yes',
+                close               : 'Close'
+                delete              : 'Delete'
+                delete_h            : '{0} Delete'
+                delete_content      : '{0} Are you sure you want to delete Permanently?'
+                settings_h          : 'Settings'
+                settings_icon_view  : 'Icon View'
+                settings_list_view  : 'List View'
+                settings_show_size  : 'Show File Size'
+                settings_show_date  : 'File Creation Date Show'
+                sorter_h            : 'Sort Edit'
+                sorter_name         : 'Sort By Name'
+                sorter_size         : 'Sort by Dimensions'
+                sorter_date         : 'Sort by date'
+                sorter_kind         : 'Sort by File Type'
             },
 
             contextmenu :
             {
-                file_open	        :	'Aç',
-                file_preview	    :	'Önizle',
-                file_download	    :   'İndir',
-                file_copy	        :	'Kopyala',
-                file_cut	        :	'Kes',
-                file_duplicate	    :	'Kopyasını Oluştur',
-                file_rename	        :	'Yeniden Adlandır',
-                file_delete	        :   'Sil',
-                file_info	        :	'Bilgiler',
-                wrapper_paste	    :	'Yapıştır',
-                wrapper_list_view	:	'Liste Görünümü',
-                wrapper_icon_view	:	'Simge Görünümü',
-                wrapper_upload	    :	'Dosya Yükle',
-                wrapper_newfolder	:	'Yeni Klasör',
-                wrapper_refresh	    :	'Yenile',
-                wrapper_show_size	:	'Boyutu Göster / Gizle',
-                wrapper_show_date	:	'Tarihi Göster / Gizle',
-                wrapper_namesorter	:	'Ada Göre Sırala',
-                wrapper_sizesorter	:	'Boyuta Göre Sırala',
-                wrapper_datesorter	:	'Tarihe Göre Sırala',
-                wrapper_kindsorter	:	'Türüne Göre Sırala'
+                file_open	        :	'File Open',
+                file_preview	    :	'File Preview',
+                file_download	    :   'File Download',
+                file_copy	        :	'File Copy',
+                file_cut	        :	'File Cut',
+                file_duplicate	    :	'File Duplicate',
+                file_rename	        :	'File Rename',
+                file_delete	        :   'File Delete',
+                file_info	        :	'File Info',
+                wrapper_paste	    :	'Paste',
+                wrapper_list_view	:	'List View',
+                wrapper_icon_view	:	'Icon View',
+                wrapper_upload	    :	'File Download',
+                wrapper_newfolder     :   'New Folder'
+                wrapper_refresh: 'Refresh'
+                wrapper_show_size:'Size Show / Hide'
+                wrapper_show_date:'Date Show / Hide'
+                wrapper_namesorter: 'Sort By Name'
+                wrapper_sizesorter: 'Sort by Dimensions'
+                wrapper_datesorter: 'Sort by date'
+                wrapper_kindsorter: 'Sort by File Type'
             },
 
             widget_menu	:
@@ -115,28 +115,28 @@
                 up_folder	:	'Up Folder',
                 upload		:	'Upload',
                 new_folder	:	'New Folder',
-                refresh		:	'Yenile',
-                download	:	'İndir',
+                refresh		:	'Refresh',
+                download	:	'Download',
                 info		:	'Bilgiler',
-                preview		:	'Ön İzle',
-                edit		:	'Düzenle',
-                copy		:	'Kopyala',
-                cut			:	'Kes',
-                paste		:	'Yapıştır',
-                duplicate	:	'Kopyasını Oluştur',
-                rename		:	'Yeniden Adlandır',
-                delete		:	'Sil',
-                settings	:	'Ayarlar',
-                icon_view	:	'Simge Görünümü',
-                list_view	:	'Liste Görünümü',
-                show_size	:	'Boyutu Göster',
-                show_date	:	'Oluşturulma Tarihini Göster',
-                sort		:	'Sırala',
-                name_sorter	:	'Ada Göre Sırala',
-                size_sorter	:	'Boyuta Göre Sırala',
-                date_sorter	:	'Tarihe Göre Sırala',
-                kind_sorter	:	'Türüne Göre Sırala',
-                about		:	'Hakkında'
+                preview		:	'Preview',
+                edit		:	'Edit',
+                copy		:	'Copy',
+                cut			:	'Cut',
+                paste		:	'Paste',
+                duplicate	:	'Duplicate',
+                rename		:	'Rename',
+                delete		:	'Delete',
+                settings	:	'Settings',
+                icon_view	:	'Icon View',
+                list_view	:	'List View',
+                show_size	:	'Show Size',
+                show_date	:	'Show Date',
+                sort		:	'Sort',
+                name_sorter	:	'Sort by Name,
+                size_sorter	:	'Sort bby Size',
+                date_sorter	:	'Sort by Date',
+                kind_sorter	:	'Sort by File Type',
+                about		:	'About'
             }
         };
 
