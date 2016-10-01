@@ -111,7 +111,7 @@ module Fcfinder
 
     def create_directory(path,directory_name)
       create_file_path = File.join(get_path(path),directory_name)
-      create_file_thumbs = create_file_path.sub(@fcdir.chomp('/'),@fcdir.chomp('/')+'/.thumbs')
+      create_file_thumbs = create_file_path.sub(@fcdir.chomp('/'),@fcdir.chomp('/')+'/thumbs')
       if File.exist?(create_file_path)
         #-1 => Aynı İsimde Dosya Var Dosya Oluşmadı
         %w(false -1)
@@ -166,14 +166,14 @@ module Fcfinder
 
     def thumbs(opt)
       thumbs = ''
-      thumbs = opt[:target].sub(@fcdir.chomp('/'),@fcdir.chomp('/')+'/.thumbs') if opt[:type] == :cut || opt[:type] == :copy || opt[:type] == :rename
-      thumbs = opt[:file_path].sub(@fcdir.chomp('/'), @fcdir.chomp('/')+'/.thumbs') if opt[:type] == :duplicate || opt[:type] == :duplicate2
+      thumbs = opt[:target].sub(@fcdir.chomp('/'),@fcdir.chomp('/')+'/thumbs') if opt[:type] == :cut || opt[:type] == :copy || opt[:type] == :rename
+      thumbs = opt[:file_path].sub(@fcdir.chomp('/'), @fcdir.chomp('/')+'/thumbs') if opt[:type] == :duplicate || opt[:type] == :duplicate2
       if File.directory?(opt[:file])
-        FileUtils.cp_r(opt[:file].sub(@fcdir.chomp('/'),@fcdir.chomp('/')+'/.thumbs'),thumbs) if opt[:type ] == :copy
-        FileUtils.mv(opt[:file].sub(@fcdir.chomp('/'),@fcdir.chomp('/')+'/.thumbs'),thumbs) if opt[:type ] == :cut
-        FileUtils.cp_r(thumbs, opt[:folder_name].sub(@fcdir.chomp('/'), @fcdir.chomp('/')+'/.thumbs')+'/'+opt[:file_name]+' copy 1'+opt[:extension]) if opt[:type ] == :duplicate
-        FileUtils.cp_r(thumbs, opt[:new_file_path].sub(@fcdir.chomp('/'), @fcdir.chomp('/')+'/.thumbs')) if opt[:type2] == :duplicate2
-        FileUtils.mv(thumbs, File.join(opt[:folder_name].sub(@fcdir.chomp('/'), @fcdir.chomp('/')+'/.thumbs'),opt[:file_name])) if opt[:type] == :rename
+        FileUtils.cp_r(opt[:file].sub(@fcdir.chomp('/'),@fcdir.chomp('/')+'/thumbs'),thumbs) if opt[:type ] == :copy
+        FileUtils.mv(opt[:file].sub(@fcdir.chomp('/'),@fcdir.chomp('/')+'/thumbs'),thumbs) if opt[:type ] == :cut
+        FileUtils.cp_r(thumbs, opt[:folder_name].sub(@fcdir.chomp('/'), @fcdir.chomp('/')+'/thumbs')+'/'+opt[:file_name]+' copy 1'+opt[:extension]) if opt[:type ] == :duplicate
+        FileUtils.cp_r(thumbs, opt[:new_file_path].sub(@fcdir.chomp('/'), @fcdir.chomp('/')+'/thumbs')) if opt[:type2] == :duplicate2
+        FileUtils.mv(thumbs, File.join(opt[:folder_name].sub(@fcdir.chomp('/'), @fcdir.chomp('/')+'/thumbs'),opt[:file_name])) if opt[:type] == :rename
       else
         if %w(image/x-ms-bmp image/jpeg image/gif image/png).include?(MIME::Types.type_for(opt[:file]).first.content_type)
           unless File.exist?(thumbs)
@@ -185,19 +185,19 @@ module Fcfinder
               end
             end
           end
-          FileUtils.cp_r(opt[:file].sub(@fcdir.chomp('/'),@fcdir.chomp('/')+'/.thumbs'),thumbs) if opt[:type] == :copy
-          FileUtils.mv(opt[:file].sub(@fcdir.chomp('/'),@fcdir.chomp('/')+'/.thumbs'),thumbs) if opt[:type] == :cut
-          FileUtils.cp_r(thumbs, opt[:folder_name].sub(@fcdir.chomp('/'), @fcdir.chomp('/')+'/.thumbs')+'/'+opt[:file_name]+' copy 1'+opt[:extension]) if opt[:type] == :duplicate
-          FileUtils.cp_r(thumbs, opt[:new_file_path].sub(@fcdir.chomp('/'), @fcdir.chomp('/')+'/.thumbs')) if opt[:type] == :duplicate2
-          FileUtils.mv(thumbs, File.join(opt[:folder_name].sub(@fcdir.chomp('/'), @fcdir.chomp('/')+'/.thumbs'),opt[:file_name])) if opt[:type] == :rename
+          FileUtils.cp_r(opt[:file].sub(@fcdir.chomp('/'),@fcdir.chomp('/')+'/thumbs'),thumbs) if opt[:type] == :copy
+          FileUtils.mv(opt[:file].sub(@fcdir.chomp('/'),@fcdir.chomp('/')+'/thumbs'),thumbs) if opt[:type] == :cut
+          FileUtils.cp_r(thumbs, opt[:folder_name].sub(@fcdir.chomp('/'), @fcdir.chomp('/')+'/thumbs')+'/'+opt[:file_name]+' copy 1'+opt[:extension]) if opt[:type] == :duplicate
+          FileUtils.cp_r(thumbs, opt[:new_file_path].sub(@fcdir.chomp('/'), @fcdir.chomp('/')+'/thumbs')) if opt[:type] == :duplicate2
+          FileUtils.mv(thumbs, File.join(opt[:folder_name].sub(@fcdir.chomp('/'), @fcdir.chomp('/')+'/thumbs'),opt[:file_name])) if opt[:type] == :rename
         end
       end
     end
 
     def image_resize(file_path)
       file_path.each do |file|
-        #ORJ=>thumbs = file.sub(@fcdir.chomp('/'), @fcdir.chomp('/')+'/.thumbs').chomp(file.sub(@fcdir.chomp('/'), @fcdir.chomp('/')+'/.thumbs').split('/').last).chomp('/')
-        thumbs = file.sub(@fcdir.chomp('/'), @fcdir.chomp('/')+'/.thumbs').chomp(file.split('/').last).chomp('/')
+        #ORJ=>thumbs = file.sub(@fcdir.chomp('/'), @fcdir.chomp('/')+'/thumbs').chomp(file.sub(@fcdir.chomp('/'), @fcdir.chomp('/')+'/thumbs').split('/').last).chomp('/')
+        thumbs = file.sub(@fcdir.chomp('/'), @fcdir.chomp('/')+'/thumbs').chomp(file.split('/').last).chomp('/')
         unless File.exist?(thumbs)
           _folder = ''
           thumbs.split('/').each do |folder|
@@ -209,7 +209,7 @@ module Fcfinder
         end
         image = MiniMagick::Image.open(file)
         image.resize '64x64'
-        image.write(file.sub(@fcdir.chomp('/'), @fcdir.chomp('/')+'/.thumbs'))
+        image.write(file.sub(@fcdir.chomp('/'), @fcdir.chomp('/')+'/thumbs'))
       end
     end
 
@@ -330,7 +330,7 @@ module Fcfinder
       begin
         if File.exist?(path)
           FileUtils.rm_rf(path)
-          FileUtils.rm_rf(path.sub(@fcdir.chomp('/'), @fcdir.chomp('/')+'/.thumbs')) if File.exist?(path.sub(@fcdir.chomp('/'), @fcdir.chomp('/')+'/.thumbs'))
+          FileUtils.rm_rf(path.sub(@fcdir.chomp('/'), @fcdir.chomp('/')+'/thumbs')) if File.exist?(path.sub(@fcdir.chomp('/'), @fcdir.chomp('/')+'/thumbs'))
           result = %w(true)
         else
           #return false Dosya Yok!
