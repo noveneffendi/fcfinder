@@ -112,9 +112,9 @@
 
             widget_menu	:
             {
-                up_folder	:	'Üst Klasor',
-                upload		:	'Yükle',
-                new_folder	:	'Yeni Klasor',
+                up_folder	:	'Up Folder',
+                upload		:	'Upload',
+                new_folder	:	'New Folder',
                 refresh		:	'Yenile',
                 download	:	'İndir',
                 info		:	'Bilgiler',
