@@ -232,7 +232,7 @@
 
                 $.each(data.file,function(key,val){
                     var _style_type = "";
-                    if (val.type == "image_file") { _style_type = "style=\"background:url('//"+val.url.replace("uploads","uploads/.thumbs")+"') no-repeat center 5px / 65% 60px \"";  }
+                    if (val.type == "image_file") { _style_type = "style=\"background:url('//"+val.url.replace("uploads","uploads/")+"') no-repeat center 5px / 65% 60px \"";  }
                     element.append('<div '+_style_type+' data-kind="'+val.type+'" data-date="'+val.ctime+'" data-size="'+val.size+'" data-size_2="'+val.size_2+'" data-name="'+key+'" data-path="'+val.path+'" class="'+val.type+'"><span class="file_name">'+key+'</span><span class="file_size"'+is_show_size+'>'+val.size+'</span><span class="file_date"'+is_show_date+'>'+val.ctime+'</span></div>');
                 });
 
