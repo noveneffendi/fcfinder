@@ -33,55 +33,55 @@
 
             error   :
             {
-                large_file  	        :	'Dosya Boyutu İzin Verilen Dosya Boyutundan Fazla \n İzin Verilen Dosya Boyutu: {0}',
-                error_type	            :	'Yüklemeye Çalıştığınız Dosya Türüne İzin Verilmemiş \n İzin Verilen Dosya Türü(leri):\n {0}.',
-                load_error	            :	'Bir Hata Meydana Geldi ve Dosya Yüklenemedi Hata Sebebi: "{0}" Olabilir.',
-                select_file_error	    :	'Bir Hata Meydana Geldi ve Dosya Açılamadı, Açmaya Çalıştığınız Dosya Sunucuda Olmayabilir.',
-                error_msg	            :	'Beklenmedik Bir Hata Meydana Geldi',
-                download_error	        :	'Bir Hata Meydana Geldi ve Dosya İndirilemiyor Hata Sebebi: "{0}" Olabilir. \n  Dosya Arşive Eklenirken Hata Oluşmuş Olabilir Klasor Adıyla Aynı Arşiv Dosyası Olmadığından Emin Olun',
-                copy_error	            :	'Bir Hata Meydana Geldi ve Koyalama İşlemi Gerçekleştirilemedi Hata Sebebi "{0}" Olabilir.',
-                replace_error           : 'Bir Hata Meydana Geldi ve Dosya Değiştirilemedi İşlem İptal Edildi, Hata Sebebi "{0}" Olabilir.',
-                duplicate_error	        :	'Bir Hata Meydana Geldi ve Seçtiğiniz Dosyanın Kopyası Oluşturulamadı Hata Sebebi: "{0}" Olabilir.',
-                rename_error	        :	'Bir Hata Meydana Geldi ve Dosya Adı Değiştirilemedi Hata Sebebi: "{0}" Olabilir.',
-                edit_error	            :	'Bir Hata Meydana Geldi, Açmaya Çalıştığınız Dosyanın Sunucuda Olmaya Bilir.',
+                large_file  	        :	'File Size File Size Allow excess of a given \n Permitted File Size: {0}',
+                error_type	            :	'You try to install the File Types not allowed \n Permitted File Type (s): \n {0}.',
+                load_error	            :	'Arrived on a square and File Error Could Not Be Loaded Error Reason: "{0}" Could be.',
+                select_file_error	    :	'Arrived and an error resulting file could not be opened, You May Not Try to Open the File Server.',
+                error_msg	            :	'Unexpected Error Occurred Arrives',
+                download_error	        :	'Arrived on a square and File Error Can not download Error Reason: "{0}" Could be. \n Error Adding File Archive to Be Formed Klas archive file with the same name to make sure that there',
+                copy_error	            :	'An Error Has Arrived Square and Copy Operation Failed Error Cause "{0}" Could be.',
+                replace_error           : 'Arrived on a square error and could not be changed Cancelled File Processing, Error Cause "{0}" Could be.',
+                duplicate_error	        :	'Copy the file could not be created and you choose Square Error An Error Has Come Reason: "{0}" Could be.',
+                rename_error	        :	'Arrived on a square error and the file name could not be changed Cause of error: "{0}" Could be.',
+                edit_error	            :	'An error resulting Arrived May Not Open the file you are working on the server.',
                 delete_error_0	        :	'Silmeye Çalıştığınız Dosyaya Erişilemiyor Dosya Olmayabilir.',
-                delete_error_1	        :  	'Bir Hata Meydana Geldi ve Dosya Silme İşlemi Gerçekleştirilemedi Hata Sebebi: "{0}" Olabilir.',
-                new_directory_error_1	:	'Bu İsimde Dosya Var',
-                new_directory_error_0	:	'Bir Hata Meydana Geldi ve Klasör Oluşturulamadı, Hata Sebebi: "{0}" Olabilir.'
+                delete_error_1	        :  	'Arrived on a square and File Deletion Failed Error Error Reason: "{0}" Could be.',
+                new_directory_error_1	:	'This name File Yes',
+                new_directory_error_0	:	'An Error Has Arrived Square and Folder Creation Failed Error Reason: "{0}" Could be.'
             },
 
             dialog  :
             {
-                info_h              : 'Information'
+                info_h              : 'Information',
                 info_size           : 'Size:',
-                info_addres         : 'Address:'
+                info_addres         : 'Address:',
                 info_url            : 'Link:',
-                info_cdate          : 'Creation Date:'
-                info_mdate          : 'Last Modified Date:'
+                info_cdate          : 'Creation Date:',
+                info_mdate          : 'Last Modified Date:',
                 info_file_permission: 'File Permissions:',
-                preview_h           : 'Preview:'
+                preview_h           : 'Preview:',
                 preview_size        : 'Size:',
-                preview_addres      : 'Address:'
+                preview_addres      : 'Address:',
                 preview_url         : 'Link:',
-                preview_cdate       : 'Creation Date:'
-                preview_mdate       : 'Last Modified Date:'
-                file_replace_h      : 'File Change or Skip'
-                file_replace_content: 'Already the target "{0}" is the name of a file There Yazılsınm on?'
-                Cancel              : 'Cancel'
+                preview_cdate       : 'Creation Date:',
+                preview_mdate       : 'Last Modified Date:',
+                file_replace_h      : 'File Change or Skip',
+                file_replace_content: 'Already the target "{0}" is the name of a file There Yazılsınm on?',
+                Cancel              : 'Cancel',
                 ok                  : 'Yes',
-                close               : 'Close'
-                delete              : 'Delete'
-                delete_h            : '{0} Delete'
-                delete_content      : '{0} Are you sure you want to delete Permanently?'
-                settings_h          : 'Settings'
-                settings_icon_view  : 'Icon View'
-                settings_list_view  : 'List View'
-                settings_show_size  : 'Show File Size'
-                settings_show_date  : 'File Creation Date Show'
-                sorter_h            : 'Sort Edit'
-                sorter_name         : 'Sort By Name'
-                sorter_size         : 'Sort by Dimensions'
-                sorter_date         : 'Sort by date'
+                close               : 'Close',
+                delete              : 'Delete',
+                delete_h            : '{0} Delete',
+                delete_content      : '{0} Are you sure you want to delete Permanently?',
+                settings_h          : 'Settings',
+                settings_icon_view  : 'Icon View',
+                settings_list_view  : 'List View',
+                settings_show_size  : 'Show File Size',
+                settings_show_date  : 'File Creation Date Show',
+                sorter_h            : 'Sort Edit',
+                sorter_name         : 'Sort By Name',
+                sorter_size         : 'Sort by Dimensions',
+                sorter_date         : 'Sort by date',
                 sorter_kind         : 'Sort by File Type'
             },
 
@@ -100,13 +100,13 @@
                 wrapper_list_view	:	'List View',
                 wrapper_icon_view	:	'Icon View',
                 wrapper_upload	    :	'File Download',
-                wrapper_newfolder     :   'New Folder'
-                wrapper_refresh: 'Refresh'
-                wrapper_show_size:'Size Show / Hide'
-                wrapper_show_date:'Date Show / Hide'
-                wrapper_namesorter: 'Sort By Name'
-                wrapper_sizesorter: 'Sort by Dimensions'
-                wrapper_datesorter: 'Sort by date'
+                wrapper_newfolder     :   'New Folder',
+                wrapper_refresh: 'Refresh',
+                wrapper_show_size:'Size Show / Hide',
+                wrapper_show_date:'Date Show / Hide',
+                wrapper_namesorter: 'Sort By Name',
+                wrapper_sizesorter: 'Sort by Dimensions',
+                wrapper_datesorter: 'Sort by date',
                 wrapper_kindsorter: 'Sort by File Type'
             },
 
@@ -132,7 +132,7 @@
                 show_size	:	'Show Size',
                 show_date	:	'Show Date',
                 sort		:	'Sort',
-                name_sorter	:	'Sort by Name,
+                name_sorter	:	'Sort by Name',
                 size_sorter	:	'Sort bby Size',
                 date_sorter	:	'Sort by Date',
                 kind_sorter	:	'Sort by File Type',
