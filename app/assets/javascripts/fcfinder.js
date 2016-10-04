@@ -99,7 +99,7 @@
                 wrapper_paste	    :	'Paste',
                 wrapper_list_view	:	'List View',
                 wrapper_icon_view	:	'Icon View',
-                wrapper_upload	    :	'File Download',
+                wrapper_upload	    :	'Upload',
                 wrapper_newfolder     :   'New Folder',
                 wrapper_refresh: 'Refresh',
                 wrapper_show_size:'Size Show / Hide',
