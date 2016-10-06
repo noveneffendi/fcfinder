@@ -492,7 +492,12 @@
             }else{
                 var data = 'fcfinder[path]='+path+'&fcfinder[type]=path_to_url';
                 $.ajax({url:opts.url,dataType:'json',type:'POST',data:data,success:function(data) {
-                    if (data[0]=="true"){ var url = "//"+data[1];
+                    if (data[0]=="true"){
+                        if (window.location.protocol !== 'https:') 
+                            var url = "http://"+data[1];
+                        else
+                            var url = "https://"+data[1];
+                        window.open(url, "_blank");
                         //CKEditor ise
                         var funcNum = fnc.getUrlParam('CKEditorFuncNum');
                         if (funcNum>0)
