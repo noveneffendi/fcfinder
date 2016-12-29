@@ -1510,16 +1510,19 @@
 
                     //
                     ctxMenu.html('<li><a class="none">' + file.attr("data-name") + '</a></li><li class="hr">&nbsp;</li>'+
+                    '<li><a href="fcfinder:open">'+opts.i18n.contextmenu.file_open+'</a></li>'+
                     '<li><a href="fcfinder:preview">'+opts.i18n.contextmenu.file_preview+'</a></li>'+
-                    '<li><a href="fcfinder:info">'+opts.i18n.contextmenu.file_info+'</a></li>'+
+                    '<li><a href="fcfinder:download">'+opts.i18n.contextmenu.file_download+'</a></li>'+
                     '<li class="hr">&nbsp;</li>'+
                     '<li><a href="fcfinder:copy">'+opts.i18n.contextmenu.file_copy+'</a></li>'+
                     '<li><a href="fcfinder:cut">'+opts.i18n.contextmenu.file_cut+'</a></li>'+
                     '<li><a href="fcfinder:duplicate">'+opts.i18n.contextmenu.file_duplicate+'</a></li>'+
                     '<li><a href="fcfinder:rename">'+opts.i18n.contextmenu.file_rename+'</a></li>'+
-                    '<li><a href="fcfinder:delete">'+opts.i18n.contextmenu.file_delete+'</a></li>');
+                    '<li><a href="fcfinder:delete">'+opts.i18n.contextmenu.file_delete+'</a></li>'+
+                    '<li class="hr">&nbsp;</li>'+
+                    '<li><a href="fcfinder:info">'+opts.i18n.contextmenu.file_info+'</a></li>');
 
-                    ctxMenu.css({"left": x + "px", "top": y - 100 + "px"});
+                    ctxMenu.css({"left": x + "px", "top": y + "px"});
                 }
 
                 if ($(e.target).is(fcfinder_selector+" .right ul.wrapper li[data-show='true']") || $(e.target).is(fcfinder_selector+" .right ul.wrapper")) {
@@ -1566,7 +1569,7 @@
                     '<li><a href="fcfinder:kindsorter">'+opts.i18n.contextmenu.wrapper_kindsorter+'</a></li>');
 
 
-                    ctxMenu.css({"left": x + "px", "top": y-100 + "px"});
+                    ctxMenu.css({"left": x + "px", "top": y + "px"});
                 }
             }
             return false;
