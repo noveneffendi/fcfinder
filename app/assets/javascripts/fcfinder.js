@@ -308,9 +308,20 @@
         '</a></li>'+
         '<li><a href="fcfinder:newfolder" title="'+opts.i18n.widget_menu.new_folder+'" class="new_folder">'+opts.i18n.widget_menu.new_folder+'</a></li>'+
         '<li><a href="fcfinder:refresh" title="'+opts.i18n.widget_menu.refresh+'" class="refresh">'+opts.i18n.widget_menu.refresh+'</a></li>'+
+        '<li><a href="" title="'+opts.i18n.widget_menu.download+'" class="download passive">'+opts.i18n.widget_menu.download+'</a></li>'+
         '<li><a href="fcfinder:info" title="'+opts.i18n.widget_menu.info+'" class="info passive">'+opts.i18n.widget_menu.info+'</a><div>'+
         '<ul>'+
         '<li><a href="fcfinder:preview" title="'+opts.i18n.widget_menu.preview+'" class="preview passive">'+opts.i18n.widget_menu.preview+'</a></li>'+
+        '</ul>'+
+        '</div></li>'+
+        '<li><a href="fcfinder:edit" title="'+opts.i18n.widget_menu.edit+'" class="edit passive">'+opts.i18n.widget_menu.edit+'</a><div>'+
+        '<ul>'+
+        '<li><a href="fcfinder:copy" title="'+opts.i18n.widget_menu.copy+'" class="copy passive">'+opts.i18n.widget_menu.copy+'</a></li>'+
+        '<li><a href="fcfinder:cut" title="'+opts.i18n.widget_menu.cut+'" class="cut passive">'+opts.i18n.widget_menu.cut+'</a></li>'+
+        '<li><a href="fcfinder:paste" title="'+opts.i18n.widget_menu.paste+'" class="paste passive">'+opts.i18n.widget_menu.paste+'</a></li>'+
+        '<li><a href="fcfinder:duplicate" title="'+opts.i18n.widget_menu.duplicate+'" class="duplicate passive">'+opts.i18n.widget_menu.duplicate+'</a></li>'+
+        '<li><a href="fcfinder:rename" title="'+opts.i18n.widget_menu.rename+'" class="rename passive">'+opts.i18n.widget_menu.rename+'</a></li>'+
+        '<li><a href="fcfinder:edit" title="'+opts.i18n.widget_menu.edit+'" class="edit passive">'+opts.i18n.widget_menu.edit+'</a></li>'+
         '</ul>'+
         '</div></li>'+
         '<li><a href="fcfinder:delete" title="'+opts.i18n.widget_menu.delete+'" class="delete passive">'+opts.i18n.widget_menu.delete+'</a></li>'+
