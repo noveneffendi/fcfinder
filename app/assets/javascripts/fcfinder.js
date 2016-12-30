@@ -508,7 +508,6 @@
                             var url = "http://"+data[1];
                         else
                             var url = "https://"+data[1];
-                        window.open(url, "_blank");
                         //CKEditor ise
                         var funcNum = fnc.getUrlParam('CKEditorFuncNum');
                         if (funcNum>0)
