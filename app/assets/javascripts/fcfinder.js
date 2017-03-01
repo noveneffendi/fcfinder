@@ -17,7 +17,7 @@
         var i18n = {
             empty_dir               :   'Directory is Empty',
             empty_file              :   'File is Empty',
-            loading                 :   'Loadng...',
+            loading                 :   'Loading...',
             file_size	            :	'File Size',
             file_name           	:	'File Data',
             file_cdate	            :	'Creation Date',
